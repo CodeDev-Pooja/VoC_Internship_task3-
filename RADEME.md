@@ -12,7 +12,7 @@ A simple web-based certificate verification tool built with HTML, CSS, and JavaS
 
 ## 🚀 Live Demo
 
-> Host on GitHub Pages or any static host and add the link here.
+[🔗 View Demo](codedev-pooja.github.io/VoC_Internship_task3-/)
 
 ## 🛠️ Technologies Used
 
