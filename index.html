@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Verify VaultofCodes internship certificates by email or ID." />
+  <meta property="og:title" content="VaultofCodes Certificate Verifier" />
+  <meta property="og:image" content="logo.png" />
+  <title>VaultofCodes - Certificate Verifier</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Branding -->
+  <header class="brand-header">
+    <img src="Assest\VoC Logo.png" alt="VaultofCodes Logo" class="brand-logo" />
+    <h1 class="brand-title">VaultofCodes</h1>
+    <button id="toggle-theme" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="identifier" class="sr-only">Email or ID</label>
+      <input id="identifier" type="text" placeholder="Enter Email or ID" aria-label="Identifier" />
+      <button onclick="verifyStudent()">Verify</button>
+    </div>
+
+    <div id="result"></div>
+    <canvas id="assignmentChart" width="200px" height="100px" class="hidden"></canvas>
+    <div class="spinner hidden" aria-label="Loading"></div>
+
+    <div id="certificateModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <img src="Assest\demo-certificate.png" alt="Demo Certificate" class="certificate-img"/>
+  </div>
+</div>
+   
+  </main>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
